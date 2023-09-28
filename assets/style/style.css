@@ -21,11 +21,14 @@ button {
   border: none;
   outline: none;
 }
+img {
+  width: 100%;
+}
 
 /* ! Base */
 body {
   font-family: "Jost", serif;
-  background: #e5e5e5;
+  background: #dde6ed;
 }
 h1 {
   font-size: 2.5rem;
@@ -44,4 +47,70 @@ h5 {
 }
 h6 {
   font-size: 0.5rem;
+}
+
+/* *Main */
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* *Button Sidebar */
+.sidebar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px;
+  cursor: pointer;
+}
+.btn__sidebar {
+  max-width: 64px;
+}
+.sidebar:hover :is(.nav) {
+  display: block;
+}
+.nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 65px;
+  background: #526d82;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.nav__list {
+  padding: 1rem 2rem;
+  width: 200px;
+  row-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.nav__list a {
+  color: #dde6ed;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.1s;
+}
+.nav__list a:hover {
+  font-weight: 800;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.1s;
+}
+
+/* *Homepage */
+.homepage {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home__img {
+  max-width: 350px;
+}
+.home__content {
+  text-align: center;
 }
