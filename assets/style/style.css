@@ -176,7 +176,8 @@ p {
 .contact,
 .education,
 .experience,
-.portfolio {
+.portfolio,
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +187,8 @@ p {
 .contact__title,
 .experience__title,
 .education__title,
-.portfolio__title {
+.portfolio__title,
+.skills__title {
   margin-bottom: 2rem;
 }
 .about__title h3,
@@ -194,7 +196,8 @@ p {
 .contact__title h3,
 .education__title h3,
 .experience__title h3,
-.portfolio__title h3 {
+.portfolio__title h3,
+.skills__title h3 {
   position: relative;
   padding-bottom: 0.6rem;
 }
@@ -203,7 +206,8 @@ p {
 .contact__title h3::after,
 .education__title h3::after,
 .experience__title h3::after,
-.portfolio__title h3::after {
+.portfolio__title h3::after,
+.skills__title h3::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -420,10 +424,27 @@ p {
 .portfolio__description {
   font-size: 2rem;
 }
-/* Portfolio Hover */
 .portfolio__card:hover .portfolio__details {
   opacity: 1;
 }
 .portfolio__details:hover :is(.portfolio__text, .portfolio__description) {
   transform: translateY(0);
+}
+
+/* *Skills */
+.skills__content {
+  display: flex;
+  column-gap: 10rem;
+}
+.skills__title {
+  margin-bottom: 8rem;
+}
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.skills__list li {
+  font-size: 2rem;
+  font-weight: 700;
 }
