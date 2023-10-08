@@ -499,11 +499,17 @@ p {
   .about__content {
     padding: 2rem;
   }
+  .about__content p {
+    padding: 3.5rem;
+  }
   .content__post {
     grid-template-columns: repeat(2, 1fr);
   }
   .portfolio__content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /* !Mobile */
@@ -513,6 +519,9 @@ p {
   }
   .btn__sidebar {
     max-width: 48px;
+  }
+  .sidebar:hover :is(.nav) {
+    left: 23px;
   }
   .home__img {
     width: 200px;
@@ -536,6 +545,7 @@ p {
     padding: 1rem;
   }
   .about__content p {
+    padding: 1.5rem;
     line-height: normal;
   }
   .content__menu {
@@ -576,6 +586,9 @@ p {
   .contact__item span {
     font-size: 1rem;
   }
+  .form__group {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .education__card h4,
   .experience__card h4 {
     font-size: 1.1rem;
@@ -597,11 +610,17 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
   .skills__content {
-    column-gap: 4rem;
-    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
-  .skills__list li {
+  .card__skill {
+    padding: 1rem;
+    width: 100%;
+  }
+  .card__skill svg {
+    height: 48px;
+  }
+  .card__skill h3{
     font-size: 1rem;
-    font-weight: 700;
   }
 }
